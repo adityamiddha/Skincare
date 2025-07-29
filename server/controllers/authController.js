@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 const User = require('../models/userModel');
 const { createToken } = require('../../utils/jwtUtils');
+=======
+const User = require('./../models/userModel');
+const { createToken } = require('./../utils/jwtUtils');
+>>>>>>> ce836ed00d081a794aa5c7f7baff362a127622c6
 const jwt = require('jsonwebtoken');
 
 
