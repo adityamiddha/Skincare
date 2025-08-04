@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "Skincare",
+    "slug": "skincare-client",
+    "version": "1.0.0",
+    "sdkVersion": "53.0.0",
+    "platforms": ["ios", "android", "web"],
+    "main": "App.js",
+    "jsEngine": "hermes"
+  }
+}
