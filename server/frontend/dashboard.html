@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to SkinCare AI</h1>
+    <p class="greeting">Hello, User!</p>
+
+    <div class="actions">
+      <button onclick="goToUpload()">Upload Skin Image</button>
+      <button onclick="goToScanHistory()">Scan History</button>
+      <button onclick="goToProfile()">Profile</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <script>
+    function goToUpload() {
+      window.location.href = 'upload.html';
+    }
+
+    function goToScanHistory() {
+      window.location.href = 'history.html';
+    }
+
+    function goToProfile() {
+      window.location.href = 'profile.html';
+    }
+
+    function logout() {
+      localStorage.removeItem('token');
+      window.location.href = 'login.html';
+    }
+
+    // Basic protection to make sure user is logged in
+    const token = localStorage.getItem('token');
+    if (!token) {
+      window.location.href = 'login.html';
+    }
+  </script>
+</body>
+</html>
